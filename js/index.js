@@ -40,3 +40,18 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//Task 1: Create selectors to point your data into elements
+
+const anchorTags = document.querySelectorAll('a');
+const mainBtn = document.getElementsByTagName('button');
+const mainHeader = document.getElementsByTagName('h1');
+
+//Task 2: Update HTML with JSON data
+
+anchorTags[0].textContent = siteContent["nav"]["nav-item-1"];
+anchorTags[1].textContent = siteContent["nav"]["nav-item-2"];
+anchorTags[2].textContent = siteContent["nav"]["nav-item-3"];
+anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
+anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
+anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
