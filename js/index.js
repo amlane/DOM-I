@@ -47,6 +47,9 @@ const anchorTags = document.querySelectorAll('a');
 const mainBtn = document.querySelector('button');
 const mainHeader = document.querySelector('h1');
 const codeImage = document.getElementById('cta-img');
+const contentHeaders = document.querySelectorAll('h4');
+const pTags = document.querySelectorAll('p');
+const middleImg = document.getElementById('middle-img');
 
 //Task 2: Update HTML with JSON data
 
@@ -60,3 +63,17 @@ anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
 mainHeader.textContent = siteContent["cta"]["h1"];
 mainBtn.textContent = siteContent["cta"]["button"];
 codeImage.src = "img/header-img.png";
+
+contentHeaders[0].textContent = siteContent['main-content']['features-h4'];
+contentHeaders[1].textContent = siteContent['main-content']['about-h4'];
+contentHeaders[2].textContent = siteContent['main-content']['services-h4'];
+contentHeaders[3].textContent = siteContent['main-content']['product-h4'];
+contentHeaders[4].textContent = siteContent['main-content']['vision-h4'];
+
+pTags[0].textContent = siteContent['main-content']["features-content"];
+pTags[1].textContent = siteContent['main-content']["about-content"];
+pTags[2].textContent = siteContent['main-content']["services-content"];
+pTags[3].textContent = siteContent['main-content']["product-content"];
+pTags[4].textContent = siteContent['main-content']["vision-content"];
+
+middleImg.src = "img/mid-page-accent.jpg";
