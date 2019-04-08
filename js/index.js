@@ -70,18 +70,8 @@ newFirstAnchorTag.textContent = "Hey";
 newLastAnchorTag.textContent = "Bye";
 navBar.prepend(newFirstAnchorTag);
 navBar.append(newLastAnchorTag);
-
-
-// const technologies = ["Data Science", "Full Stack", "User Experience", "Network Security", "Game Dev"];
-
-// const workList = document.querySelector('.work-list');
-
-// technologies.forEach( currentValue => {
-//   const listItem = document.createElement('li');
-//   listItem.textContent = currentValue;
-//   workList.append(listItem);
-// })
-
+newFirstAnchorTag.style.color = "green";
+newLastAnchorTag.style.color = "green";
 
 mainHeader.textContent = siteContent["cta"]["h1"];
 mainBtn.textContent = siteContent["cta"]["button"];
