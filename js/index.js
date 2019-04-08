@@ -43,6 +43,7 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 //Task 1: Create selectors to point your data into elements
 
+const navBar = document.querySelector('nav')
 const anchorTags = document.querySelectorAll('a');
 const mainBtn = document.querySelector('button');
 const mainHeader = document.querySelector('h1');
@@ -50,6 +51,7 @@ const codeImage = document.getElementById('cta-img');
 const h4Tags = document.querySelectorAll('h4');
 const pTags = document.querySelectorAll('p');
 const middleImg = document.getElementById('middle-img');
+
 
 //Task 2: Update HTML with JSON data
 
@@ -59,6 +61,27 @@ anchorTags[2].textContent = siteContent["nav"]["nav-item-3"];
 anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
 anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
 anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
+
+anchorTags.forEach(x => x.style.color = "green");
+
+const newFirstAnchorTag = document.createElement('a');
+const newLastAnchorTag = document.createElement('a');
+newFirstAnchorTag.textContent = "Hey";
+newLastAnchorTag.textContent = "Bye";
+navBar.prepend(newFirstAnchorTag);
+navBar.append(newLastAnchorTag);
+
+
+// const technologies = ["Data Science", "Full Stack", "User Experience", "Network Security", "Game Dev"];
+
+// const workList = document.querySelector('.work-list');
+
+// technologies.forEach( currentValue => {
+//   const listItem = document.createElement('li');
+//   listItem.textContent = currentValue;
+//   workList.append(listItem);
+// })
+
 
 mainHeader.textContent = siteContent["cta"]["h1"];
 mainBtn.textContent = siteContent["cta"]["button"];
