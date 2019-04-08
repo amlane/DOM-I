@@ -44,8 +44,9 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 //Task 1: Create selectors to point your data into elements
 
 const anchorTags = document.querySelectorAll('a');
-const mainBtn = document.getElementsByTagName('button');
-const mainHeader = document.getElementsByTagName('h1');
+const mainBtn = document.querySelector('button');
+const mainHeader = document.querySelector('h1');
+const codeImage = document.getElementById('cta-img');
 
 //Task 2: Update HTML with JSON data
 
@@ -55,3 +56,7 @@ anchorTags[2].textContent = siteContent["nav"]["nav-item-3"];
 anchorTags[3].textContent = siteContent["nav"]["nav-item-4"];
 anchorTags[4].textContent = siteContent["nav"]["nav-item-5"];
 anchorTags[5].textContent = siteContent["nav"]["nav-item-6"];
+
+mainHeader.textContent = siteContent["cta"]["h1"];
+mainBtn.textContent = siteContent["cta"]["button"];
+codeImage.src = "img/header-img.png";
